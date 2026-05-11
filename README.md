@@ -1,5 +1,5 @@
 
-# Customer Analytics Report (SQL Data Warehouse Project)
+# Customer Analytics Report (SQL Project)
 
 ## Overview
 This project builds a customer-level analytics view using a star schema data warehouse. It combines customer and sales data to generate key performance indicators (KPIs) for customer behavior, value, and segmentation.
@@ -84,7 +84,7 @@ This view is ready for:
 
 ---
 
-# Product Performance Report (SQL Data Warehouse Project)
+# Product Performance Report (SQL Project)
 
 ## Overview
 This project builds a product-level analytics view using a star schema data warehouse. It combines product, sales, and customer data to generate key business KPIs for performance analysis.
