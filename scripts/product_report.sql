@@ -14,7 +14,11 @@ Highlights: - Retrieves product information from the Products table.
 - recency (months since last purchase) 
 ============================================================================================== 
 */
-CREATE OR ALTER VIEW gold.vw_product_report AS
+IF OBJECT_ID('gold.products_report', 'V') IS NOT NULL
+    DROP VIEW gold.products_report;
+GO
+
+CREATE OR ALTER VIEW gold.product_report AS
 WITH product_sales AS
 (
     SELECT 
