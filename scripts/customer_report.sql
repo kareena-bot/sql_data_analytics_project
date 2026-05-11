@@ -20,7 +20,11 @@ Highlights
  - Recency of last purchase
 =======================================================================
 */
-CREATE OR ALTER VIEW gold.vw_customer_report AS
+IF OBJECT_ID('gold.customer_report', 'V') IS NOT NULL
+    DROP VIEW gold.customer_report;
+GO
+
+CREATE OR ALTER VIEW gold.customer_report AS
 WITH base_query AS
 /*---------------------------------------------------------------------
 Base Query: Gather essential columns from tables.
