@@ -59,8 +59,8 @@ SELECT
     total_customers,
     lifespan_months,
     CASE
-        WHEN total_sales >= 8000 THEN 'Top Performer'
-        WHEN total_sales >= 1000 THEN 'Mid Performer'
+        WHEN total_sales >= 50000 THEN 'Top Performer'
+        WHEN total_sales >= 10000 THEN 'Mid Performer'
         ELSE 'Poor Performer'
     END AS performance_segment,
     -- AOV
